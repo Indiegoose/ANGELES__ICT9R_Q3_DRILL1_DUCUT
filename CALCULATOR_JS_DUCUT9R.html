@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Basic Calculator Display</title>
+
+	<style>
+
+		body{
+		display: flex ;
+		justify-content: center;	
+		align-items: center;
+		position: center;
+		height: 100vh;
+		font-family: Arial;
+		background-color: #E9CEE5;
+		color: #B04FA3;
+		}
+
+		h1, h2{
+			font-family: Arial;
+		}
+
+	</style>
+
+</head>
+<body>
+
+	<div class="container">
+		<h1>Calculator</h1>
+
+		<div class="addition">
+		<h2>Addition</h2>
+		<p> <span class="label"></span> 6 <span class="label">+</span> 7 <class="result" id="sumResult"> =...</p>
+		</div>
+
+		<div class="subtraction">
+		<h2>Subtraction</h2>
+		<p> <span class="label"></span> 9 <span class="label">-</span> 6 <class="result" id="diffResult"> =...</p>
+		</div>
+
+		<div class="multiplication">
+		<h2>Multiplication</h2>
+		<p> <span class="label"></span> 2 <span class="label">*</span> 2 <p class="result" id="prodResult"> =...</p>
+		</div>
+		
+		<div class="division">
+		<h2>Division</h2>
+		<p> <span class="label"></span> 35 <span class="label">/</span> 7 <class="result" id="quoResult"> =...</p>
+		</div>
+	</div>
+
+	<script>
+		let a = 6;
+		let b = 7;
+		let sum = a + b
+		document.getElementById("sumResult").innerHTML = "= " + sum
+
+		let c = 9;
+		let d = 6;
+		let difference = c - d
+		document.getElementById("diffResult").innerHTML = "= " + difference
+
+		let e = 2;
+		let f = 2;
+		let product = e * f
+		document.getElementById("prodResult").innerHTML = "= " + product
+
+		let g = 35;
+		let h = 7;
+		let quotient = g / h
+		document.getElementById("quoResult").innerHTML = "= " + quotient
+	</script>
+
+
+</body>
+</html>
